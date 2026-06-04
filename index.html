@@ -1,11 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Timon</title>
 </head>
 <body>
-    
+    <header class="navbar navbar-dark bg-dark shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Timon</a>
+            <nav>
+                <a class="nav-link d-inline text-white" href="#about">Over mij</a>
+                <a class="nav-link d-inline text-white" href="#projects">Projecten</a>
+                <a class="nav-link d-inline text-white" href="#skills">Vaardigheden</a>
+                <a class="nav-link d-inline text-white" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-dark text-center text-white mb-3 py-5 d-flex align-items-center position-relative">
+            <canvas id="glCanvas"
+                class="position-absolute top-0 start-0 w-100 h-100 z-0">
+            </canvas>
+            
+            <div class="container position-relative z-1">
+                <h1 class="display-4 fw-bold py-3">Hallo, ik ben Timon</h1>
+                <p class="lead mx-auto py-3">Een creatieve ontwikkelaar met oog voor gebruikerservaring en moderne weboplossingen.</p>
+                <a class="btn btn-primary btn-lg me-2" href="#projects">Bekijk projecten</a>
+                <a class="btn btn-outline-light btn-lg " href="#contact">Neem contact op</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Over mij</h2>
+                        <p>Ik ontwikkel toegankelijke, snel ladende websites met een moderne uitstraling. Mijn kracht ligt in het vertalen van ideeën naar functionele designs met duidelijke structuur.</p>
+                        <ul>
+                            <li>Front-end and back-end development</li>
+                            <li>Responsive design</li>
+                            <li>Database management</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="card p-4 shadow-sm">
+                            <h3>Snelle feiten</h3>
+                            <p>Ik werk met HTML, CSS, JavaScript en php. Ik houd van kleine projecten met grote impact.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-light py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Projecten</h2>
+                    <p>Voorbeelden van recente werk en experimenten.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <article class="p-4 h-100 shadow-sm">
+                            <h3>Portfolio website</h3>
+                            <p>Een strakke en moderne portfolio voor zelfstandige creatievelingen.</p>
+                            <p class="mb-0"><strong>Technologieën:</strong> HTML, CSS, Bootstrap</p>
+                        </article>
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <article class="project-card p-4 h-100 shadow-sm">
+                            <h3>Interactie prototype</h3>
+                            <p>Een breed inzetbaar prototype met geoptimaliseerde flow en duidelijke structuur.</p>
+                            <p class="mb-0"><strong>Technologieën:</strong> JavaScript, CSS Animaties</p>
+                        </article>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2>Vaardigheden</h2>
+                    <p>Tools en technologieën waar ik graag mee werk.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-4 shadow-sm">
+                            <h3>HTML</h3>
+                            <p>Semantisch en toegankelijk.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-4 shadow-sm">
+                            <h3>CSS</h3>
+                            <p>Responsive layouts en design system.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-4 shadow-sm">
+                            <h3>JavaScript</h3>
+                            <p>Interactie, logica en dynamische interfaces.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="p-4 shadow-sm">
+                            <h3>Bootstrap</h3>
+                            <p>Snel bouwen met consistente componenten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <h2>Contact</h2>
+                        <p>Ben je klaar voor een nieuw project of wil je samenwerken? Stuur een bericht en ik neem snel contact op.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="btn btn-outline-light btn-lg" href="mailto:example@domein.nl">Stuur een e-mail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center">
+        <div class="container text-muted">© 2026 Timon Hu. Portfolio.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/background-cube.js"></script>
 </body>
 </html>

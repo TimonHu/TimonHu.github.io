@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Timon</title>
+    <script>
+    fetch("html/nav.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+        });
+    </script>
 </head>
 <body>
-    <header class="navbar navbar-dark bg-dark shadow-sm sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Timon</a>
-            <nav>
-                <a class="nav-link d-inline text-white p-2" href="#about">Over mij</a>
-                <a class="nav-link d-inline text-white p-2" href="#projects">Projecten</a>
-                <a class="nav-link d-inline text-white p-2" href="#skills">Vaardigheden</a>
-                <a class="nav-link d-inline text-white p-2" href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
+    <div id="navbar"></div>
 
     <main>
-        <section class="bg-dark text-center text-white mb-3 py-5 d-flex align-items-center position-relative">
+        <section class="bg-dark text-center text-white mb-3 pb-5 d-flex align-items-center position-relative">
             <canvas id="glCanvas"
                 class="position-absolute top-0 start-0 w-100 h-100 z-0">
             </canvas>

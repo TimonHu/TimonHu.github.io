@@ -32,7 +32,7 @@ const material = new THREE.MeshStandardMaterial({
     map: texture
 });
 
-const cube = new THREE.Mesh(geometry, material);cube.scale.set(1.6, 1.6, 1.6);
+const cube = new THREE.Mesh(geometry, material);cube.scale.set(2, 2, 2);
 scene.add(cube);
 
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);

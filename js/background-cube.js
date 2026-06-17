@@ -353,7 +353,7 @@ function render() {
     const width = canvas.width;
     const height = canvas.height;
     
-    const projectionMatrix = mat4Perspective(Math.PI / 4, width / height, 0.1, 1000);
+    const projectionMatrix = mat4Perspective(Math.PI / 3, width / height, 0.1, 1000);
     const viewMatrix = mat4Translate(mat4Identity(), 0, 0, -3);
     
     let modelMatrix = mat4Identity();

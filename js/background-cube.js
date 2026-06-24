@@ -1,8 +1,11 @@
 const canvas = document.getElementById('glCanvas');
-const gl = canvas.getContext('webgl2', { alpha: true, antialias: true });
+if (!canvas) {
+    console.warn('glCanvas element not found; skipping background cube.');
+}
+const gl = canvas && canvas.getContext ? canvas.getContext('webgl2', { alpha: true, antialias: true }) : null;
 
 if (!gl) {
-    console.error('WebGL2 not supported');
+    console.error('WebGL2 not supported or canvas missing');
 }
 
 // Vertex Shader

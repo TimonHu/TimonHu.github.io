@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>ECS in C</title>
+    <script>
+    fetch("../html/nav.html")
+        .then(r => r.text())
+        .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+        });
+    </script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="container py-5">
+        <header class="mb-5 text-center">
+            <h1>ECS in C</h1>
+            <p class="lead">Een implementatie van het Entity Component System in C.</p>
+            <p><a href="https://github.com/TTboss90/ECS" class="btn btn-dark" target="_blank" rel="noopener">Bekijk de code op GitHub</a></p>
+        </header>
+
+        <section class="mb-5">
+            <h2>Over dit project</h2>
+            <p>
+                Een Entity Component System (ECS) is een manier om dingen in een game te organiseren.
+                Een entity is gewoon een ding in de game, zoals een speler, vijand of boom.
+                Components zijn stukjes informatie over dat ding, bijvoorbeeld waar het staat of hoeveel leven het heeft.
+                Systems zijn de regels of acties die met die informatie werken, zoals bewegen of schade krijgen.
+                Samen zorgen entities, components en systems ervoor dat alles in de game netjes en snel werkt
+            </p>
+        </section>
+
+        <section class="row g-4 mb-5">
+            <div class="col-md-6">
+                <div class="p-4 border rounded shadow-sm bg-white h-100">
+                    <h3>Doel</h3>
+                    <p>Het implementeren van een Entity Component System in de programmeertaal C.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-4 border rounded shadow-sm bg-white h-100">
+                    <h3>Technologieën</h3>
+                    <p>visual Studio, c</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Belangrijkste onderdelen</h2>
+            <ul>
+                <li>andere ECS's onderzocht</li>
+                <li>een idee hoe ik hem ging maken</li>
+                <li>gemaakt in c</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center bg-light">
+        <div class="container text-muted">© 2026 Timon Hu. Portfolio.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
